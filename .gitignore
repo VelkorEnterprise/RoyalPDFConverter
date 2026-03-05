@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+public/export-data.json
+package-lock.json
+migrated_prompt_history/

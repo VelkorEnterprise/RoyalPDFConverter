@@ -10,7 +10,7 @@ const countries = [
 
 const generatedKeywords = rawKeywords.map(k => k.replace(/\s+/g, '-').toLowerCase());
 
-const baseUrl = 'https://royalpdfconverter.com';
+const baseUrl = 'https://royalpdfconverter.netlify.app';
 
 let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -23,7 +23,7 @@ let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 
 for (const country of countries) {
   sitemap += `  <url>
-    <loc>${baseUrl}/#/location/${country}</loc>
+    <loc>${baseUrl}/location/${country}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -32,7 +32,7 @@ for (const country of countries) {
 
 for (const keyword of generatedKeywords) {
   sitemap += `  <url>
-    <loc>${baseUrl}/#/feature/${keyword}</loc>
+    <loc>${baseUrl}/feature/${keyword}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

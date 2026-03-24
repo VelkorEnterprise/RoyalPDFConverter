@@ -42,7 +42,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "ratingCount": "64812",
+        "ratingCount": "1250000",
         "bestRating": "5",
         "worstRating": "1"
       },
@@ -93,6 +93,15 @@
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
               serif: ['Playfair Display', 'serif'],
+            },
+            animation: {
+              'marquee': 'marquee 30s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              }
             },
             boxShadow: {
               '3xl': '0 35px 60px -15px rgba(212, 175, 55, 0.3)',

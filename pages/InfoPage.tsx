@@ -18,17 +18,17 @@ const InfoPage: React.FC<InfoPageProps> = ({ type }) => {
     }, [content]);
 
     return (
-        <div className="bg-slate-50 min-h-screen py-24">
+        <div className="bg-gold-50 min-h-screen py-24">
             <div className="max-w-4xl mx-auto px-4 sm:px-6">
-                 <Link to="/" className="inline-flex items-center text-slate-500 hover:text-orange-600 mb-8 transition-colors">
-                    <ArrowLeft size={16} className="mr-2" /> Back to Home
+                 <Link to="/" className="inline-flex items-center text-gold-500 hover:text-gold-700 mb-8 transition-colors font-black uppercase text-xs tracking-widest">
+                    <ArrowLeft size={16} className="mr-3" /> Back to Home
                  </Link>
-                <div className="bg-white rounded-3xl shadow-xl shadow-slate-200 p-8 md:p-12">
-                    <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 border-b border-slate-100 pb-6">
+                <div className="bg-white rounded-[3rem] shadow-3xl border border-gold-100 p-8 md:p-16">
+                    <h1 className="text-4xl md:text-5xl font-serif font-black text-gold-950 mb-10 border-b border-gold-100 pb-8 uppercase tracking-tight">
                         {content.title}
                     </h1>
                     <div 
-                        className="prose prose-lg prose-slate max-w-none prose-headings:font-bold prose-a:text-orange-600"
+                        className="prose prose-lg prose-gold max-w-none prose-headings:font-serif prose-headings:font-black prose-headings:uppercase prose-headings:tracking-tight prose-a:text-gold-600 prose-a:font-bold prose-strong:text-gold-950 text-gold-800/80 font-medium leading-relaxed"
                         dangerouslySetInnerHTML={{ __html: content.content }}
                     />
                 </div>

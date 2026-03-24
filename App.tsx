@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Layout from './components/Layout.tsx';
 import Home from './pages/Home.tsx';
 import ToolView from './pages/ToolView.tsx';
@@ -20,36 +21,38 @@ const ScrollToTop = () => {
 
 const App = () => {
   return (
-    <Router>
-      <ScrollToTop />
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/tools/:slug" element={<ToolView />} />
-          <Route path="/blog" element={<BlogList />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          
-          {/* SEO Routes */}
-          <Route path="/location/:country" element={<CountrySEO />} />
-          <Route path="/feature/:keyword" element={<KeywordSEO />} />
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tools/:slug" element={<ToolView />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            
+            {/* SEO Routes */}
+            <Route path="/location/:country" element={<CountrySEO />} />
+            <Route path="/feature/:keyword" element={<KeywordSEO />} />
 
-          {/* Informational Pages Routes */}
-          <Route path="/help" element={<InfoPage type="help" />} />
-          <Route path="/news" element={<InfoPage type="news" />} />
-          <Route path="/feedback" element={<InfoPage type="feedback" />} />
-          <Route path="/support" element={<InfoPage type="support" />} />
-          <Route path="/faq" element={<InfoPage type="faq" />} />
-          <Route path="/security" element={<InfoPage type="security" />} />
-          <Route path="/disclaimer" element={<InfoPage type="disclaimer" />} />
-          <Route path="/privacy" element={<InfoPage type="privacy" />} />
-          <Route path="/terms" element={<InfoPage type="terms" />} />
-          <Route path="/cookies" element={<InfoPage type="cookies" />} />
-          <Route path="/export" element={<ExportPage />} />
+            {/* Informational Pages Routes */}
+            <Route path="/help" element={<InfoPage type="help" />} />
+            <Route path="/news" element={<InfoPage type="news" />} />
+            <Route path="/feedback" element={<InfoPage type="feedback" />} />
+            <Route path="/support" element={<InfoPage type="support" />} />
+            <Route path="/faq" element={<InfoPage type="faq" />} />
+            <Route path="/security" element={<InfoPage type="security" />} />
+            <Route path="/disclaimer" element={<InfoPage type="disclaimer" />} />
+            <Route path="/privacy" element={<InfoPage type="privacy" />} />
+            <Route path="/terms" element={<InfoPage type="terms" />} />
+            <Route path="/cookies" element={<InfoPage type="cookies" />} />
+            <Route path="/export" element={<ExportPage />} />
 
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </Layout>
-    </Router>
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </HelmetProvider>
   );
 };
 

@@ -30,9 +30,9 @@ function Blob({ color, position, speed, distort }) {
 
 export default function Hero3D() {
   const blobs = useMemo(() => [
-    { color: '#D4AF37', position: [-2, 1, -2], speed: 0.8, distort: 0.3 }, 
+    { color: '#FFD700', position: [-2, 1, -2], speed: 0.8, distort: 0.3 }, 
     { color: '#F8FAFC', position: [2, -1, -3], speed: 0.6, distort: 0.3 }, 
-    { color: '#B59228', position: [0, -2, -1], speed: 0.7, distort: 0.2 }  
+    { color: '#DAA520', position: [0, -2, -1], speed: 0.7, distort: 0.2 }  
   ], []);
 
   return (

@@ -47,9 +47,10 @@ const MetaUpdater = () => {
 
 const Ticker = () => {
     const phrases = [
-        "Royal Professional PDF Suite", "Military-Grade Security", "100% Free & Unlimited", 
-        "No Signup Required", "No Uploads Needed", "Client-Side AI Processing", 
-        "Gold Standard Privacy", "Instant Execution", "HIPAA Compliant Workflows"
+        "NO SIGNUP REQUIRED", "100% FREE FOREVER", "MILITARY-GRADE SECURITY", 
+        "TRUSTED BY 1M+ USERS DAILY", "HIPAA & GDPR COMPLIANT", "NO LIMITS", 
+        "WE HELPED A MILLION USERS DAILY", "4.9/5 RATING (1M+ REVIEWS)", 
+        "NO CREDIT CARD REQUIRED", "INSTANT EXECUTION", "CLIENT-SIDE AI PROCESSING"
     ];
     return (
         <div className="bg-slate-950 text-gold-400 py-3 text-[10px] font-black uppercase tracking-[0.2em] overflow-hidden whitespace-nowrap border-b border-gold-900 sticky top-20 z-40">

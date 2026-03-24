@@ -57,32 +57,32 @@ const KeywordSEO = () => {
             <Star className="w-5 h-5 fill-current" />
             <Star className="w-5 h-5 fill-current" />
             <Star className="w-5 h-5 fill-current" />
-            <span className="text-slate-600 text-sm font-medium ml-2">4.9/5 from 64,812 reviews</span>
+            <span className="text-gold-600/80 text-sm font-black uppercase tracking-widest ml-3">4.9/5 from 64,812 reviews</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-serif font-bold text-slate-900 mb-6 leading-tight capitalize">
+          <h1 className="text-4xl md:text-7xl font-serif font-black text-gold-950 mb-8 leading-[0.9] tracking-tighter uppercase">
             {keywordData.title}
           </h1>
-          <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            The most advanced solution for {keywordData.title.toLowerCase()}. Process your files instantly in your browser with military-grade security.
+          <p className="text-xl text-gold-600/80 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
+            The most advanced solution for {keywordData.title?.toLowerCase() || ''}. Process your files instantly in your browser with military-grade security.
           </p>
-          <Link to="/" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-slate-900 rounded-xl hover:bg-slate-800 transition-colors shadow-xl hover:shadow-2xl hover:-translate-y-1 transform duration-200">
+          <Link to="/" className="inline-flex items-center justify-center px-10 py-5 text-sm font-black uppercase tracking-[0.2em] text-white bg-gold-950 rounded-[2rem] hover:bg-gold-800 transition-all shadow-3xl hover:shadow-4xl border border-gold-700/20">
             Access Tool Now
-            <Zap className="w-5 h-5 ml-2" />
+            <Zap className="w-5 h-5 ml-3 text-gold-200" />
           </Link>
-          <p className="mt-4 text-sm text-slate-500 font-medium">No signup required • 100% Free • Private</p>
+          <p className="mt-6 text-[10px] text-gold-400 font-black uppercase tracking-[0.3em]">No signup required • 100% Free • Private</p>
         </div>
 
         {/* Content Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">Complete Guide to {keywordData.title}</h2>
-              <p className="text-slate-600 mb-6 leading-relaxed text-lg">
-                When you need a reliable solution for <strong>{keywordData.title.toLowerCase()}</strong>, you shouldn't have to compromise on privacy or pay expensive subscription fees. Our tool is built on modern WebAssembly technology, meaning all processing happens directly on your device. Your sensitive documents never touch our servers.
+            <div className="bg-white p-10 rounded-[3rem] shadow-3xl border border-gold-100">
+              <h2 className="text-4xl font-serif font-black text-gold-950 mb-8 uppercase tracking-tight">Complete Guide to {keywordData.title}</h2>
+              <p className="text-gold-600/80 mb-8 leading-relaxed text-lg font-medium">
+                When you need a reliable solution for <strong>{keywordData.title?.toLowerCase() || ''}</strong>, you shouldn't have to compromise on privacy or pay expensive subscription fees. Our tool is built on modern WebAssembly technology, meaning all processing happens directly on your device. Your sensitive documents never touch our servers.
               </p>
               
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 mt-8">Why Choose Us for {keywordData.title}?</h3>
-              <ul className="space-y-4 mb-8">
+              <h3 className="text-2xl font-serif font-black text-gold-950 mb-6 mt-12 uppercase tracking-tight">Why Choose Us for {keywordData.title}?</h3>
+              <ul className="space-y-4 mb-12">
                 {[
                   "Instant processing with zero upload wait times",
                   "Military-grade local encryption",
@@ -91,24 +91,24 @@ const KeywordSEO = () => {
                   "Pixel-perfect conversion quality"
                 ].map((benefit, i) => (
                   <li key={i} className="flex items-start">
-                    <CheckCircle className="w-6 h-6 text-gold-500 mr-3 flex-shrink-0" />
-                    <span className="text-slate-700 text-lg">{benefit}</span>
+                    <CheckCircle className="w-6 h-6 text-gold-500 mr-4 flex-shrink-0" />
+                    <span className="text-gold-800 font-bold text-lg">{benefit}</span>
                   </li>
                 ))}
               </ul>
 
-              <h3 className="text-2xl font-bold text-slate-900 mb-6 mt-12 border-t border-slate-100 pt-8">Frequently Asked Questions (FAQ)</h3>
+              <h3 className="text-2xl font-serif font-black text-gold-950 mb-8 mt-16 border-t border-gold-100 pt-12 uppercase tracking-tight">Frequently Asked Questions (FAQ)</h3>
               <div className="space-y-6">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                    <h4 className="text-xl font-bold text-slate-900 mb-3 flex items-start">
-                      <span className="text-gold-500 mr-3">Q:</span>
+                  <div key={index} className="bg-gold-50/50 p-8 rounded-[2.5rem] border border-gold-100">
+                    <h4 className="text-xl font-serif font-black text-gold-950 mb-4 flex items-start uppercase leading-tight">
+                      <span className="text-gold-500 mr-4">Q:</span>
                       {faq.q}
                     </h4>
-                    <p className="text-slate-600 leading-relaxed pl-7">
-                      <span className="font-bold text-slate-400 mr-2">A:</span>
+                    <div className="text-gold-600/80 leading-relaxed pl-10 font-medium">
+                      <span className="font-black text-gold-400 mr-3 uppercase text-xs tracking-widest">A:</span>
                       {faq.a}
-                    </p>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -116,25 +116,26 @@ const KeywordSEO = () => {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-slate-900 p-8 rounded-3xl text-white">
-              <Shield className="w-12 h-12 text-gold-400 mb-6" />
-              <h3 className="text-xl font-bold mb-4">Enterprise Security</h3>
-              <p className="text-slate-300 mb-6">
+            <div className="bg-gold-950 p-10 rounded-[3rem] text-white border border-gold-700/20 shadow-3xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gold-700/10 blur-[50px] rounded-full"></div>
+              <Shield className="w-14 h-14 text-gold-400 mb-8 relative z-10" />
+              <h3 className="text-2xl font-serif font-black mb-4 relative z-10 uppercase tracking-tight">Enterprise Security</h3>
+              <p className="text-gold-200/80 mb-8 font-medium relative z-10 leading-relaxed">
                 Trusted by professionals worldwide. Our client-side architecture ensures your data remains strictly confidential.
               </p>
-              <Link to="/security" className="text-gold-400 font-medium hover:text-gold-300 flex items-center">
+              <Link to="/security" className="text-gold-400 font-black uppercase text-xs tracking-widest hover:text-gold-200 flex items-center relative z-10 transition-colors">
                 Read our security whitepaper
-                <FileText className="w-4 h-4 ml-2" />
+                <FileText className="w-4 h-4 ml-3" />
               </Link>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-              <h3 className="text-xl font-bold text-slate-900 mb-6">Explore More Tools</h3>
+            <div className="bg-white p-10 rounded-[3rem] shadow-3xl border border-gold-100">
+              <h3 className="text-xl font-serif font-black text-gold-950 mb-8 uppercase tracking-widest">Explore More Tools</h3>
               <div className="space-y-4">
                 {internalLinks.map(k => (
-                  <Link key={k.slug} to={`/feature/${k.slug}`} className="group flex items-center justify-between text-sm text-slate-600 hover:text-gold-600 hover:bg-gold-50 p-3 rounded-xl transition-colors border border-transparent hover:border-gold-100">
-                    <span className="font-medium">{k.title}</span>
-                    <ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <Link key={k.slug} to={`/feature/${k.slug}`} className="group flex items-center justify-between text-[10px] font-black uppercase tracking-widest text-gold-600 hover:text-white hover:bg-gold-700 p-4 rounded-xl transition-all border border-transparent hover:border-gold-700">
+                    <span>{k.title}</span>
+                    <ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" />
                   </Link>
                 ))}
               </div>

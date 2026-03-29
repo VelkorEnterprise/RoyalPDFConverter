@@ -1,8 +1,7 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Black Background -->
-  <rect width="512" height="512" rx="128" fill="#000000"/>
-  <!-- Document Shape in Gold -->
-  <path d="M160 80H352L432 160V432H160V80Z" fill="#D4AF37"/>
-  <!-- Crown Cutout in Black -->
-  <path d="M192 160L224 120L256 160L288 120L320 160V200H192V160Z" fill="#000000"/>
+  <!-- Royal Gold Background with Black Outline -->
+  <rect x="16" y="16" width="480" height="480" rx="128" fill="#D4AF37" stroke="#000000" stroke-width="32"/>
+  
+  <!-- White Crown -->
+  <path d="M128 352L160 224L224 288L256 192L288 288L352 224L384 352H128Z" fill="#FFFFFF" stroke="#000000" stroke-width="16" stroke-linejoin="round"/>
 </svg>

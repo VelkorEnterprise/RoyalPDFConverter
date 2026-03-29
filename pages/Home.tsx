@@ -103,7 +103,7 @@ const Home = () => {
         <title>Royal PDF-converter | #1 Free Professional PDF Converter & AI Suite (No Signup)</title>
         <meta name="description" content="Royal PDF-converter: The world's most advanced PDF suite. Trusted by 1,000,000+ users daily. Text to PDF, HTML to PDF, Merge, Split, and AI Analysis. 100% Free & Secure." />
         <meta name="keywords" content="pdf converter, free online pdf tools, secure pdf editor, merge pdf, split pdf, compress pdf, text to pdf, html to pdf, ai document analysis, no signup pdf tools, hipaa compliant pdf, best free pdf editor 2025" />
-        <link rel="canonical" href="https://royalpdfconverter.com" />
+        <link rel="canonical" href="https://royalpdfconverter.pages.dev" />
       </Helmet>
 
       {/* AUTHORITATIVE HERO */}
@@ -494,7 +494,8 @@ const Home = () => {
                             "@type": "Review",
                             "author": { "@type": "Person", "name": "Sarah J." },
                             "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-                            "reviewBody": "The fastest PDF tool I've ever used. No signup, no fees, just pure speed. The local-first privacy aspect is a total game-changer for my sensitive legal documents."
+                            "reviewBody": "The fastest PDF tool I've ever used. No signup, no fees, just pure speed. The local-first privacy aspect is a total game-changer for my sensitive legal documents.",
+                            "itemReviewed": { "@type": "SoftwareApplication", "name": "Royal PDF-converter" }
                         }
                     },
                     {
@@ -504,7 +505,8 @@ const Home = () => {
                             "@type": "Review",
                             "author": { "@type": "Person", "name": "Mark T." },
                             "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-                            "reviewBody": "I was skeptical about a free tool, but Royal PDF is better than any paid suite. The AI document analysis is incredibly accurate and saves me hours of manual work."
+                            "reviewBody": "I was skeptical about a free tool, but Royal PDF is better than any paid suite. The AI document analysis is incredibly accurate and saves me hours of manual work.",
+                            "itemReviewed": { "@type": "SoftwareApplication", "name": "Royal PDF-converter" }
                         }
                     }
                 ]

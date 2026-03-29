@@ -216,7 +216,7 @@ const ToolView = () => {
       <SEO 
         title={`${tool.name} | Secure Client-Side PDF Tools | Royal PDF`}
         description={`Use our ${tool.name} tool for free. 100% private, no server uploads. The fastest way to ${tool.description.toLowerCase()}`}
-        canonical={`https://royalpdfconverter.com/tools/${tool.slug}`}
+        canonical={`https://royalpdfconverter.pages.dev/tools/${tool.slug}`}
       />
       
       {/* Modernized Hero Section */}

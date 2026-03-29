@@ -26,4 +26,4 @@ Royal PDF-converter is the world's most advanced, client-side PDF suite. We leve
 - Cloudflare Pages (Static)
 
 ## Contact
-https://royalpdfconverter.com
+https://royalpdfconverter.pages.dev

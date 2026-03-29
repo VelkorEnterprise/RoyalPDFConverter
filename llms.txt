@@ -10,4 +10,4 @@ The world's fastest professional PDF suite. Secure, local, and incredibly fast. 
 - HIPAA & GDPR Compliant
 
 ## Website
-https://royalpdfconverter.com
+https://royalpdfconverter.pages.dev

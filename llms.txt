@@ -1,0 +1,13 @@
+# Royal PDF-converter
+The world's fastest professional PDF suite. Secure, local, and incredibly fast. 36+ tools for free. No signup, no limits.
+
+## Key Features
+- PDF to Word Converter
+- PDF Merger
+- PDF Splitter
+- PDF Compressor
+- AI Document Analysis
+- HIPAA & GDPR Compliant
+
+## Website
+https://royalpdfconverter.com

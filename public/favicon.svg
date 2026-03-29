@@ -1,8 +1,8 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="512" height="512" rx="128" fill="#FFFFFF"/>
-  <!-- Document Shape -->
-  <path d="M160 100H320L400 180V412H160V100Z" fill="#F4C2C2" stroke="#D4AF37" stroke-width="24" stroke-linejoin="round"/>
-  <!-- Crown Shape -->
-  <path d="M192 180L224 140L256 180L288 140L320 180V220H192V180Z" fill="#D4AF37"/>
+  <!-- Black Background -->
+  <rect width="512" height="512" rx="128" fill="#000000"/>
+  <!-- Document Shape in Gold -->
+  <path d="M160 80H352L432 160V432H160V80Z" fill="#D4AF37"/>
+  <!-- Crown Cutout in Black -->
+  <path d="M192 160L224 120L256 160L288 120L320 160V200H192V160Z" fill="#000000"/>
 </svg>

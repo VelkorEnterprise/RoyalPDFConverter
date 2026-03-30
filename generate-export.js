@@ -21,7 +21,7 @@ const filesToExport = [
   { name: '_redirects', path: path.join(publicDir, '_redirects') },
   { name: 'sitemap.xml', path: path.join(publicDir, 'sitemap.xml') },
   { name: 'robots.txt', path: path.join(publicDir, 'robots.txt') },
-  { name: 'favicon.svg', path: path.join(publicDir, 'favicon.svg') }
+  { name: 'favicon.jpg', path: path.join(publicDir, 'favicon.jpg') }
 ];
 
 const exportData = {};

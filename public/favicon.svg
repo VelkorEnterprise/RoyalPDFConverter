@@ -1,7 +1,23 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Royal Gold Background with Black Outline -->
-  <rect x="24" y="24" width="464" height="464" rx="100" fill="#D4AF37" stroke="#000000" stroke-width="24"/>
-  
-  <!-- Elegant White Crown with Black Outline -->
-  <path d="M110 360L130 220L200 280L256 140L312 280L382 220L402 360H110Z" fill="#FFFFFF" stroke="#000000" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="#FDFBF7"/>
+
+  <!-- Folder/Document -->
+  <path d="M60 420V130h110l40 40h240v250H60z" fill="#C59B58"/>
+  <path d="M170 130l40 40h-40z" fill="#B08848"/>
+
+  <!-- Crown -->
+  <g fill="#C59B58">
+    <!-- Points -->
+    <path d="M256 80l-40 100h80l-40-100z"/>
+    <path d="M160 110l-30 70h60l-30-70z"/>
+    <path d="M352 110l-30 70h60l-30-70z"/>
+    <!-- Spheres -->
+    <circle cx="256" cy="80" r="18"/>
+    <circle cx="130" cy="110" r="18"/>
+    <circle cx="382" cy="110" r="18"/>
+    <!-- Base -->
+    <rect x="180" y="180" width="152" height="25" rx="5"/>
+    <rect x="180" y="210" width="152" height="15" rx="5"/>
+  </g>
 </svg>

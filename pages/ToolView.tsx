@@ -242,7 +242,7 @@ const ToolView = () => {
                     {/* ... (keep existing UI) ... */}
                     {files.length === 0 ? (
                         <div className="border-2 border-dashed border-slate-200 rounded-[2rem] p-10 hover:border-gold-500 hover:bg-gold-50/30 transition-all cursor-pointer relative text-center group bg-slate-50">
-                            <input type="file" multiple={isBatchInput} onChange={(e) => setFiles(Array.from(e.target.files || []))} className="absolute inset-0 opacity-0 cursor-pointer z-10" />
+                            <input type="file" multiple={isBatchInput} accept={isAi ? ".pdf" : undefined} onChange={(e) => setFiles(Array.from(e.target.files || []))} className="absolute inset-0 opacity-0 cursor-pointer z-10" />
                             <div className="w-16 h-16 bg-white rounded-[1.25rem] flex items-center justify-center mx-auto mb-6 shadow-md text-gold-700 group-hover:scale-105 transition-transform">
                                 <FileUp size={32} />
                             </div>

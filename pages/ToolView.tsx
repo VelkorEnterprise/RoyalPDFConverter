@@ -251,6 +251,19 @@ const ToolView = () => {
                         </div>
                     ) : (
                         <div className="space-y-6">
+                            {/* Tool Settings */}
+                            {tool.id === 'watermark' && (
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                    <input type="text" placeholder="Watermark Text" value={watermarkText} onChange={(e) => setWatermarkText(e.target.value)} className="p-3 rounded-lg border border-slate-200 text-sm" />
+                                    <input type="number" placeholder="Font Size" value={fontSize} onChange={(e) => setFontSize(Number(e.target.value))} className="p-3 rounded-lg border border-slate-200 text-sm" />
+                                </div>
+                            )}
+                            {tool.id === 'rotate' && (
+                                <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                    <input type="number" placeholder="Rotation Angle (e.g., 90)" value={rotation} onChange={(e) => setRotation(Number(e.target.value))} className="w-full p-3 rounded-lg border border-slate-200 text-sm" />
+                                </div>
+                            )}
+
                             <div className="p-6 bg-slate-50 border border-slate-100 rounded-[2rem] flex items-center gap-4 shadow-sm">
                                 <div className="w-12 h-12 bg-gold-950 text-white rounded-xl flex items-center justify-center font-black">{files.length}</div>
                                 <div className="flex-grow overflow-hidden text-left">
